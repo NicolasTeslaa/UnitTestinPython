@@ -1,8 +1,14 @@
-import unittest
+def test_sum():
+    # Cria uma lista com os números 5, 10 e 20
+    lista = [5, 10, 20]
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+    # Executa a função sum utilizando a lista como argumento
+    resultado = sum(lista)
 
-if __name__ == '__main__':
-    unittest.main()
+    # Verifica se o resultado é igual a 35
+    if resultado == 35:
+        print("Resultado igual a 35")
+    else:
+        print("Diferente de 35")
+
+print(test_sum())
